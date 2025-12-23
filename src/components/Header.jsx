@@ -1,5 +1,5 @@
 import { useState } from "react";
-import myImg from "../assets/Header.jpg";
+import myImg from "/images/Header.jpg";
 import { sections } from "../data/Links";
 import { Link } from "react-router-dom";
 
@@ -25,11 +25,11 @@ function Header() {
                   </button>
 
                   {openSlug === cat.slug && (
-                    <ul className="absolute top-full bg-[#B09364] border-5 border-[#32281E] z-50">
+                    <ul className="absolute top-full bg-[#E6DAB9] border-5 border-[#32281E] z-50">
                       {cat.items.map((page) => (
-                        <li className="text-gray-600" key={page.path}>
+                        <li className="text-black" key={page.path}>
                           <Link to={page.path}>
-                            <p className="text-gray-600">{page.label}</p>
+                            <p className="p-1 text-black">{page.label}</p>
                           </Link>
                         </li>
                       ))}
