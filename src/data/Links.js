@@ -3,7 +3,7 @@ export const sections = [
     category: "world",
     slug: "Il Mondo",
     items: [
-        { label: "Le Razze", path: "/pages/world/races"},
+        { label: "Le Razze", path: "/races"},
         { label: "Le Classi", path: "/pages/world/classes"},
         { label: "Le Ere di Tamriel", path: "/pages/world/ages"},
         { label: "Le Regioni", path: "/pages/world/regions"},
