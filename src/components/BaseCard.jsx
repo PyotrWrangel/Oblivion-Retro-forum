@@ -1,7 +1,7 @@
 function BaseCard({ title, children }) {
   return (
     <>
-      <div className="mx-auto pt-2 bg-[#dacca3] w-120 mt-[20px] md-[20px]    border-4 border-[#5b4732] ring-4 ring-[#3a2a1a] ring-offset-4 ring-offset-[#dacca3] p-4">
+      <div className="mx-auto pt-2 bg-[#dacca3] w-120 mt-[20px] md-[20px]    border-4 border-[#5b4732] ring-4 ring-[#3a2a1a] ring-offset-4 ring-offset-[#BFB69C] p-4">
         <div className=" bg-[#68513a]">
           <p className="font-serif text-center font-[700] text-[16px] text-[#EEE2BF]  ">
             {title}
