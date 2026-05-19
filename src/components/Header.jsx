@@ -9,18 +9,20 @@ function Header() {
   return (
     <>
       <div className=" flex items-center ">
-        <div className="mx-auto  inset-x-0 top-9 max-w-4xl">
-          <img className="" src={myImg} alt="oblivion image"></img>
-          <div className="lg:flex lg:gap-x-12"></div>
-          <nav className="lg:flex lg:gap-x-12 mb-[20px]">
-            <ul className="grid grid-cols-5 gap-6 ">
+        <div className="mx-auto  inset-x-0 top-9 max-w-8xl">
+          <Link to="/">
+          <img className="w-800" src={myImg} alt="oblivion image"></img>
+          </Link>
+          <div className="lg:flex lg:gap-x-6"></div>
+          <nav className=" lg:flex lg:gap-x-6 mb-[20px]">
+            <ul className="grid grid-cols-5 gap-6">
               {sections.map((cat) => (
-                <li className="relative hover:bg-[#E6DAB9] hover:rounded hover:border-2 hover:border-black-200"
+                <li className="relative text-[25px]"
                   key={cat.slug}
                   onMouseEnter={() => setOpenSlug(cat.slug)}
                   onMouseLeave={() => setOpenSlug(null)}
                 >
-                  <button className="text-[#3A2D20] font-bold ">
+                  <button className="text-[#3A2D20] font-bold hover:bg-[#E6DAB9] px-2 py-1 hover:rounded hover:border-2 hover:border-black-500 hover:scale-105 transition-all duration-300 ease-in-out">
                     {cat.slug}
                   </button>
 
