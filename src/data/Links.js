@@ -4,13 +4,13 @@ export const sections = [
     slug: "Il Mondo",
     items: [
         { label: "Le Razze", path: "/races"},
-        { label: "Le Classi", path: "/pages/world/classes"},
-        { label: "Le Ere di Tamriel", path: "/pages/world/ages"},
-        { label: "Le Regioni", path: "/pages/world/regions"},
-        { label: "I segni Zodiacali", path: "/pages/world/birthSigns"},
-        { label: "I Libri", path: "/pages/world/books"},
-        { label: "Le Mappe", path: "/pages/world/maps"},
-        { label: "I Principi Daedra", path: "/pages/world/daedra"}
+        { label: "Le Classi", path: "/classes"},
+        { label: "Le Ere di Tamriel", path: "/ages"},
+        { label: "Le Regioni", path: "/regions"},
+        { label: "I segni Zodiacali", path: "/birthSigns"},
+        { label: "I Libri", path: "/books"},
+        { label: "Le Mappe", path: "/maps"},
+        { label: "I Principi Daedra", path: "/daedra"}
     ]
 },
 {

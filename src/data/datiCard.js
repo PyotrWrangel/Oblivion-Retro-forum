@@ -69,7 +69,7 @@ export const datiCard = [
         image: "/images/forum_join.jpg",
         imagePosition: "top",
         date: "2007/08/19"
-    },
+    }
     //     {
     //     id: 4,
     //     title:  "NUOVA FUNZIONE CERCA",
