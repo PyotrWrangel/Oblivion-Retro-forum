@@ -15,12 +15,12 @@ function Header() {
           <nav className="lg:flex lg:gap-x-12 mb-[20px]">
             <ul className="grid grid-cols-5 gap-6 ">
               {sections.map((cat) => (
-                <li className="relative"
+                <li className="relative hover:bg-[#E6DAB9] hover:rounded hover:border-2 hover:border-black-200"
                   key={cat.slug}
                   onMouseEnter={() => setOpenSlug(cat.slug)}
                   onMouseLeave={() => setOpenSlug(null)}
                 >
-                  <button className="text-[#3A2D20] font-bold">
+                  <button className="text-[#3A2D20] font-bold ">
                     {cat.slug}
                   </button>
 
