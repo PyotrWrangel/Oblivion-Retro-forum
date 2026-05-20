@@ -39,7 +39,7 @@ export const sections = [
 },
 {
     category: "guides",
-    slug: "Guide Tematiche",
+    slug: "Le Guide ",
     items: [
         { label: "Trucchi", path: "/pages/guides/cheats"},
         { label: "Le Armature", path: "/pages/guides/armor"},
