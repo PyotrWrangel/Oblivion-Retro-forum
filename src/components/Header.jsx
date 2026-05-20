@@ -13,8 +13,7 @@ function Header() {
           <Link to="/">
           <img className="w-800" src={myImg} alt="oblivion image"></img>
           </Link>
-          <div className="lg:flex lg:gap-x-6"></div>
-          <nav className=" lg:flex lg:gap-x-6 mb-[20px]">
+          <nav className="m-auto lg:flex lg:gap-x-6 mb-[20px] justify-center">
             <ul className="grid grid-cols-5 gap-6">
               {sections.map((cat) => (
                 <li className="relative text-[25px]"
