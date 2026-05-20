@@ -8,8 +8,10 @@ function Class() {
     const [selectedClass, setSelectedClass] = useState(null);
     return (
         <div>
-            <h2>In questa guida trovi tutte le classi utilizzabili</h2>
-            <BaseCard title="Le Classi di Tamriel">
+            <BaseCard 
+            title="Le Classi di Tamriel" 
+            subtitle="In questa guida trovi tutte le classi utilizzabili">
+              <div className="grid grid-cols-3 gap-4">
             {Classes.map((item) => (
                 <CharacterCard
                 key={item.id}
@@ -28,6 +30,7 @@ function Class() {
                 onClose={() => setSelectedClass(null)}
                 />
             )}
+            </div>
             </BaseCard>
         </div>
     );

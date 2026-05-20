@@ -10,7 +10,9 @@ function Razze() {
     return ( 
         <div>
             <h2>In questa guida trovi tutte le razze di tamriel</h2>
-            <BaseCard title="Le Razze di Tamriel">
+            <BaseCard title="Le Razze di Tamriel"
+            subtitle="In questa guida trovi tutte le razze utilizzabili">
+                <div className="grid grid-cols-3 gap-4">
             {Races.map((item) => (
                 <CharacterCard
                 key={item.id}
@@ -31,6 +33,7 @@ function Razze() {
                 onClose={() => setSelectedRace(null)}
                 />
             )}
+            </div>
             </BaseCard>
         </div>
      );

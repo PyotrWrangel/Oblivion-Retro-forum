@@ -1,5 +1,8 @@
 import Card from "../components/Card";
+import SideCard from "../components/SideCard";
 import { datiCard } from "../data/datiCard";
+import { sidebarinfo } from "../data/sidebarinfo";
+
 
 function Homepage() {
 
@@ -8,7 +11,8 @@ function Homepage() {
 
     return (
     <>
-
+<div className="flex gap-12 w-full max-w-6xl m-auto">
+    <div>
     {nuoviDati.map((news) => (
         <Card
         key={news.id}
@@ -20,6 +24,19 @@ function Homepage() {
         imagePosition={news.imagePosition}
         ></Card>
     ))}
+    </div>
+      <div className="mt-5">
+    {sidebarinfo.map((item) => (
+        <SideCard
+            key={item.id}
+            title={item.title}
+            img={item.img}
+            imgtitle={item.imgTitle}
+            description={item.description}
+        />
+    ))}
+        </div>
+</div>
     </>
     )
 }
