@@ -9,7 +9,6 @@ function Razze() {
     const [selectedRace, setSelectedRace] = useState(null);
     return ( 
         <div>
-            <h2>In questa guida trovi tutte le razze di tamriel</h2>
             <BaseCard title="Le Razze di Tamriel"
             subtitle="In questa guida trovi tutte le razze utilizzabili">
                 <div className="grid grid-cols-3 gap-4">
