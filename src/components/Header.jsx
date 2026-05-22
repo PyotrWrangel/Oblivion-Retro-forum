@@ -21,7 +21,7 @@ function Header() {
                   onMouseEnter={() => setOpenSlug(cat.slug)}
                   onMouseLeave={() => setOpenSlug(null)}
                 >
-                  <button className="text-[#3A2D20] font-bold hover:bg-[#E6DAB9] px-2 py-1 hover:rounded hover:border-2 hover:border-black-500 hover:scale-105 transition-all duration-300 ease-in-out">
+                  <button className="text-[#3A2D20] font-bold hover:bg-[#E6DAB9] px-2 py-1 hover:rounded hover:border-2 hover:border-black-500 hover:scale-110  duration-40 ease-in">
                     {cat.slug}
                   </button>
 

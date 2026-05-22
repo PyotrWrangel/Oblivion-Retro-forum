@@ -2,18 +2,18 @@ function AgesCard({ image, name, description, onClick }) {
     return (
         
         <div
-            className=" m-auto w-[280px] min-h-[420px] bg-[#e2d7b7] rounded-lg overflow-hidden cursor-pointer hover:scale-102 transition-transform shadow-lg
+            className=" m-auto mt-8 w-[680px] min-h-[420px] rounded-lg overflow-hidden cursor-pointer hover:scale-102 transition-transform 
             "
             onClick={onClick}
         >
-            <img className=" w-full h-[240px] object-fit" src={image} alt={name}/>
+            <img className="w-[380px] h-[280px] m-auto" src={image} alt={name}/>
 
             <div className="p-3">
-                <h3 className="text-center text-[18px] underline mb-2 font-bold">
+                <h3 className="text-center text-[18px] text-[#990000] underline mb-2 font-bold">
                     {name}
                 </h3>
 
-                <p className="text-center text-[16px] flex-1 overflow-hidden">
+                <p className="text-left text-[18px] flex-1 overflow-hidden whitespace-pre-line">
                     {description}
                 </p>
             </div>

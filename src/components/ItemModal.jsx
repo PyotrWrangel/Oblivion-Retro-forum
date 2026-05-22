@@ -1,5 +1,3 @@
-
-
 function ItemModal ({ item, onClose }) {
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50" onClick={onClose}>
@@ -10,4 +8,5 @@ function ItemModal ({ item, onClose }) {
         </div>
     )
                 }
+
 export default ItemModal;
