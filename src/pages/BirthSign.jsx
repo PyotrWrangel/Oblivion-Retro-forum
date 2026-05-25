@@ -13,8 +13,8 @@ function BirthSign() {
     return (
         <BaseCard title="I segni zodiacali di Tamriel"
         subtitle="In questa guida trovi tutti i segni zodiacali di Tamriel">
-            <div className="text-left  grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-4">
+            <div className="text-left flex ">
+                <div className="w-[480px] flex flex-col gap-4 ">
                 {Signs.map((sign) => (
                     <ItemList
                     key={sign.id}

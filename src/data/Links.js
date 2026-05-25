@@ -8,9 +8,9 @@ export const sections = [
         { label: "Le Ere di Tamriel", path: "/ages"},
         { label: "Le Regioni", path: "/regions"},
         { label: "I segni Zodiacali", path: "/birthSigns"},
-        { label: "I Libri", path: "/books"},
-        { label: "Le Mappe", path: "/maps"},
-        { label: "I Principi Daedra", path: "/daedra"}
+   /*     { label: "I Libri", path: "/books"},
+        { label: "Le Mappe", path: "/maps"},*/
+        { label: "I Principi Daedra", path: "/daedricprince"}
     ]
 },
 {

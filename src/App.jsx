@@ -7,9 +7,13 @@ import Class from './pages/Class';
 import Age from './pages/Age';
 import Region from './pages/Regions';
 import BirthSign from './pages/BirthSign';
+import Working from './pages/Working';
+import DaedricPrince from './pages/DaedricPrince';
 
 
 function App() {
+
+
 
   return (
     <>
@@ -22,7 +26,9 @@ function App() {
       <Route path='/ages' element={<Age />} />
       <Route path='/regions' element={<Region />} />
       <Route path='/birthsigns' element={<BirthSign />} />
-
+      <Route path='/daedricprince' element={<DaedricPrince />} />
+      <Route path='*' element={<Working/>} />
+      
     </Routes> 
     </>
   )

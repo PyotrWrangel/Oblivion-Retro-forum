@@ -14,9 +14,9 @@ function Header() {
           <img className="w-800" src={myImg} alt="oblivion image"></img>
           </Link>
           <nav className="m-auto lg:flex lg:gap-x-6 mb-[20px] justify-center">
-            <ul className="grid grid-cols-5 gap-6">
+            <ul className="grid grid-cols-5 gap-6 ">
               {sections.map((cat) => (
-                <li className="relative text-[25px]"
+                <li className="relative text-[25px] "
                   key={cat.slug}
                   onMouseEnter={() => setOpenSlug(cat.slug)}
                   onMouseLeave={() => setOpenSlug(null)}
@@ -26,11 +26,11 @@ function Header() {
                   </button>
 
                   {openSlug === cat.slug && (
-                    <ul className="absolute top-full bg-[#E6DAB9] border-5 border-[#32281E] z-50">
+                    <ul className="w-full absolute top-full bg-[#E6DAB9] border-5 border-[#32281E] z-50">
                       {cat.items.map((page) => (
-                        <li className="text-black" key={page.path}>
+                        <li className="text-black hover:bg-[#68513A] " key={page.path}>
                           <Link to={page.path}>
-                            <p className="p-1 text-black">{page.label}</p>
+                            <p className="p-1 text-black hover:text-white">{page.label}</p>
                           </Link>
                         </li>
                       ))}
