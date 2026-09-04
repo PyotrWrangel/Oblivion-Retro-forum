@@ -9,6 +9,8 @@ import Region from './pages/Regions';
 import BirthSign from './pages/BirthSign';
 import Working from './pages/Working';
 import DaedricPrince from './pages/DaedricPrince';
+import LoreQuest from './pages/LoreQuest';
+
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
       <Route path='/regions' element={<Region />} />
       <Route path='/birthsigns' element={<BirthSign />} />
       <Route path='/daedricprince' element={<DaedricPrince />} />
+      <Route path='/lorequest' element={<LoreQuest />} />
       <Route path='*' element={<Working/>} />
       
     </Routes> 

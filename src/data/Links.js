@@ -17,7 +17,7 @@ export const sections = [
     category: "quest",
     slug: "Quest",
     items: [
-        { label: "Storia Principale", path: "/pages/quest/lore"},
+        { label: "Storia Principale", path: "/lorequest"},
         { label: "Fratellanza Oscura", path: "/pages/quest/DarkBrotherood"},
         { label: "Gilda Maghi", path: "/pages/quest/magesGuild"},
         { label: "Gilda Ladri", path: "/pages/quest/thievesGuild"},
