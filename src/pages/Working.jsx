@@ -1,10 +1,7 @@
 import InProgress from "../components/InProgress";
 
-function Region() {
-
-    return (
-      <InProgress></InProgress>
-    );
+function Working() {
+  return <InProgress />;
 }
 
-export default Region;
+export default Working;

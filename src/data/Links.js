@@ -7,7 +7,7 @@ export const sections = [
         { label: "Le Classi", path: "/classes"},
         { label: "Le Ere di Tamriel", path: "/ages"},
         { label: "Le Regioni", path: "/regions"},
-        { label: "I segni Zodiacali", path: "/birthSigns"},
+        { label: "I segni Zodiacali", path: "/birthsigns"},
    /*     { label: "I Libri", path: "/books"},
         { label: "Le Mappe", path: "/maps"},*/
         { label: "I Principi Daedra", path: "/daedricprince"}
@@ -18,7 +18,7 @@ export const sections = [
     slug: "Quest",
     items: [
         { label: "Storia Principale", path: "/lorequest"},
-        { label: "Fratellanza Oscura", path: "/pages/quest/DarkBrotherood"},
+        { label: "Fratellanza Oscura", path: "/darkquest"},
         { label: "Gilda Maghi", path: "/pages/quest/magesGuild"},
         { label: "Gilda Ladri", path: "/pages/quest/thievesGuild"},
         { label: "Gilda Guerrieri", path: "/pages/quest/fightersGuild"},

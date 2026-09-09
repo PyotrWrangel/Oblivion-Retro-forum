@@ -1,62 +1,19 @@
+/* Layout radice: larghezza piena, il contenimento avviene nelle pagine. */
 #root {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-body {
-  /* background-image: url(https://wallpapers.com/images/hd/dark-sky-background-1920-x-1080-lfjvgd6dk4u03s84.jpg); */
-  /* background-repeat: no-repeat; */
-  background-color: #eee2bf;
-  background-blend-mode: darken;
-}
-
-/* Classi personalizzate */
-
-.intro {
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  right: 0;
-  margin-bottom: 60em;
-}
-
-.historySection {
-  max-width: 800px;
-  text-align: center;
-}
-
+/* Il logo animato della sidebar / header */
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 5em;
+  padding: 1.25em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
+  filter: drop-shadow(0 0 1.5em rgba(184, 145, 47, 0.65));
 }

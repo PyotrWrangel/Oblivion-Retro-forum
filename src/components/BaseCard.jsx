@@ -1,25 +1,28 @@
+/**
+ * Contenitore principale delle pagine-guida.
+ * Larghezza fluida: piena su mobile, limitata a --container-content su desktop.
+ */
 function BaseCard({ title, subtitle, children }) {
   return (
-
-      <div className="mx-auto pt-2 bg-[#dacca3] w-300 mt-[20px] md-[20px] border-4 border-[#5b4732] ring-4 ring-[#3a2a1a] ring-offset-4 ring-offset-[#BFB69C] p-4">
-
-    
-            {title && (
-                      <div className=" bg-[#68513a]">
-               <p className="font-serif text-center font-[700] text-[28px] text-[#EEE2BF]">
-                {title}
-              </p>
-              </div>
-              
+    <section className="page-x w-full py-2 sm:py-4">
+      <div className="frame-ornate mx-auto w-full max-w-content bg-parchment-400 p-2 sm:p-4">
+        {title && (
+          <div className="title-bar px-3 py-2 sm:px-4 sm:py-3">
+            <h1 className="text-center font-display text-fluid-2xl font-bold tracking-wide text-parchment-100">
+              {title}
+            </h1>
+          </div>
         )}
+
         {subtitle && (
-                <p className="font-serif text-center text-[28px] m-auto mt-6 font-bold text-[#5B4732]">{subtitle}</p>
-          )}
-    
-          <div className="m-2">
-            {children}
-        </div>
+          <p className="mx-auto mt-4 max-w-3xl text-center font-display text-fluid-lg font-bold text-oak-600 sm:mt-6">
+            {subtitle}
+          </p>
+        )}
+
+        <div className="mt-4 sm:mt-6">{children}</div>
       </div>
+    </section>
   );
 }
 

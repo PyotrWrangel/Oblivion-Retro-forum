@@ -1,21 +1,31 @@
 import ReactMarkdown from "react-markdown";
+import SafeImage from "./SafeImage";
+import { withLineBreaks } from "../lib/markdown";
 
-function SideCard ({ title, img, imgtitle, description }) {
+/** Riquadro laterale della homepage (avvisi, links, ecc.). */
+function SideCard({ title, img, imgtitle, description }) {
+  return (
+    <aside className="frame-ornate w-full bg-parchment-400 p-2 sm:p-3">
+      <div className="title-bar px-2 py-2">
+        <h2 className="text-center font-display text-fluid-lg font-bold tracking-wide text-parchment-100">
+          {title}
+        </h2>
+      </div>
 
-    return (
+      {img && (
+        <SafeImage
+          src={img}
+          alt={imgtitle || ""}
+          loading="lazy"
+          className="mx-auto my-3 w-20"
+        />
+      )}
 
-        <div className="w-[280px] h-auto border-4 border-[#32271d] ring-4 ring-[#3a2a1a] ring-offset-4 ring-offset-[#dacca3] p-2 mb-6 bg-[#dacca3]">
-            <div className="bg-[#68513a]">
-                <p className="font-serif text-center font-[700] text-[26px] text-[#EEE2BF]">{ title }</p>
-                </div>
-               {img && 
-            <img className="w-[80px] m-auto" src={img} alt={imgtitle}></img>
-                }
-            <div className="space-y-3 leading-relaxed text-[18px]">
-                 <ReactMarkdown>{ description }</ReactMarkdown>
-            </div>
-
-        </div>
-    )
+      <div className="prose-oblivion prose-oblivion--compact prose mt-2 max-w-none text-left">
+        <ReactMarkdown>{withLineBreaks(description)}</ReactMarkdown>
+      </div>
+    </aside>
+  );
 }
-    export default SideCard;
+
+export default SideCard;
