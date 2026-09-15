@@ -1,10 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BaseCard from "../../components/BaseCard.jsx";
 import AgesCard from "../../components/AgesCard.jsx";
-import { Ages } from "../../data/ages.js";
 
 function Age() {
   const [open, setOpen] = useState(null);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost/obl-forum-backend-provvisorio/get.php?table=ages")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
 
   return (
     <BaseCard
@@ -12,7 +18,7 @@ function Age() {
       subtitle="In questa guida trovi tutte le ere di Tamriel"
     >
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 sm:gap-6">
-        {Ages.map((age) => {
+        {data.map((age) => {
           const isOpen = open === age.id;
           return (
             <div key={age.id}>

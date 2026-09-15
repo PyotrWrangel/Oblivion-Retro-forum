@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BaseCard from "../../components/BaseCard.jsx";
 import CharacterCard from "../../components/CharacterCard.jsx";
 import ItemModal from "../../components/ItemModal.jsx";
-import { Classes } from "../../data/Classes.js";
+
 
 function Class() {
+  const [data, setData] = useState([]);
   const [selectedClass, setSelectedClass] = useState(null);
+
+  useEffect(()  => {
+    fetch("http://localhost/obl-forum-backend-provvisorio/get.php?table=classes")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
 
   return (
     <BaseCard
@@ -13,7 +20,7 @@ function Class() {
       subtitle="In questa guida trovi tutte le classi utilizzabili"
     >
       <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-        {Classes.map((item) => (
+        {data.map((item) => (
           <CharacterCard
             key={item.id}
             image={item.image}
