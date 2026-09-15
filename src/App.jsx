@@ -12,6 +12,7 @@ import DaedricPrince from "./pages/World/DaedricPrince";
 import LoreQuest from "./pages/Quest/LoreQuest";
 import Working from "./pages/Working";
 import DarkQuest from "./pages/Quest/DarkQuest.jsx";
+import Admin from "./pages/Admin.jsx";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/daedricprince" element={<DaedricPrince />} />
           <Route path="/lorequest" element={<LoreQuest />} />
           <Route path="/darkquest" element={<DarkQuest />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<Working />} />
 
         </Routes>
