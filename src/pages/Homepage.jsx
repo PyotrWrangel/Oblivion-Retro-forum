@@ -8,7 +8,7 @@ function Homepage() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost/obl-forum-backend-provvisorio/get.php")
+    fetch("http://localhost/obl-forum-backend-provvisorio/get.php?table=datiCard")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
