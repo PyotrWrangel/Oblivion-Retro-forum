@@ -12,7 +12,7 @@ function CharacterCard({ image, name, description, onClick }) {
         src={image}
         alt={name}
         loading="lazy"
-        className="aspect-square w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+        className="aspect-square w-full object-fill object-top transition-transform duration-300 group-hover:scale-105"
       />
 
       <div className="flex flex-1 flex-col gap-2 p-3">

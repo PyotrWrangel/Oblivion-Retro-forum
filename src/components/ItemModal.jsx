@@ -44,8 +44,8 @@ function ItemModal({ item, onClose, imgSize = "" }) {
               alt={item.name}
               className={`mx-auto mb-4 rounded-sm ${
                 imgSize === "small"
-                  ? "h-[100px] w-[100px] object-cover"
-                  : "w-full max-w-md"
+                  ? "h-[80px] w-[80px] object-contain"
+                  : "w-full max-w-xs"
               }`}
             />
           )}
