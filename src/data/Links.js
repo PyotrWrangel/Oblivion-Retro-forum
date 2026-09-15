@@ -62,5 +62,12 @@ export const sections = [
         { label: "Requisiti Minimi", path: "/pages/articles/requirements"},
         { label: "Dicono di noi...", path: "/pages/guides/aboutUs"},
     ]
+},
+{
+    category: "button",
+    slug: "Admin",
+    items: [
+        { label: "Carica Dati", path: "/admin"},
+    ]
 }
 ]
