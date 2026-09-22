@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BaseCard from "../../components/BaseCard.jsx";
 import CharacterCard from "../../components/CharacterCard.jsx";
 import ItemModal from "../../components/ItemModal.jsx";
-import { Regions } from "../../data/regions.js";
 
 function Region() {
+  const [data, setData] = useState([]);
   const [selectedRegion, setSelectedRegion] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost/obl-forum-backend-provvisorio/get.php?table=regions")
+    .then((response) => response.json())
+    .then((data) => setData(data));
+  }, []);
+
+  
 
   return (
     <BaseCard
@@ -13,13 +21,13 @@ function Region() {
       subtitle="In questa guida trovi tutte le regioni esplorabili"
     >
       <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 xl:grid-cols-4">
-        {Regions.map((region) => (
+        {data.map((item) => (
           <CharacterCard
-            key={region.id}
-            image={region.image}
-            name={region.name}
-            description={region.description}
-            onClick={() => setSelectedRegion(region)}
+            key={item.id}
+            image={item.image}
+            name={item.name}
+            description={item.description}
+            onClick={() => setSelectedRegion(item)}
           />
         ))}
       </div>

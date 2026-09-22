@@ -7,7 +7,7 @@ function Razze() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost/obl-forum-backend-provvisorio/getRaces.php")
+    fetch("http://localhost/obl-forum-backend-provvisorio/get.php?table=races")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
