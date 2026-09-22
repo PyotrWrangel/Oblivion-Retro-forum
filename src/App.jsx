@@ -13,6 +13,7 @@ import LoreQuest from "./pages/Quest/LoreQuest";
 import Working from "./pages/Working";
 import DarkQuest from "./pages/Quest/DarkQuest.jsx";
 import Admin from "./pages/Admin.jsx";
+import Books from "./pages/World/Books.jsx";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/lorequest" element={<LoreQuest />} />
           <Route path="/darkquest" element={<DarkQuest />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/books" element={<Books />} />
           <Route path="*" element={<Working />} />
 
         </Routes>
