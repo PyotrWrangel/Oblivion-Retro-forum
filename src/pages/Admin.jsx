@@ -11,12 +11,12 @@ const importers = [
   { tabella: "dark_brotherhood", label: "Fratellanza Oscura", script: "importerdarkBrotherhood.php" },
   { tabella: "races", label: "Le Razze", script: null },
   { tabella: "classes", label: "Le Classi", script: "importerClasses.php" },
-  { tabella: "regions", label: "Le Regioni", script: null },
+  { tabella: "regions", label: "Le Regioni", script: "importerRegions.php" },
   { tabella: "signs", label: "I Segni Zodiacali", script: null },
-
+  { tabella: "books", label: "I Libri", script: "importerBooks.php" }
 ];
 
-function Admin() {
+function Admin() { 
   return (
     <BaseCard
       title="Popola il Database"
