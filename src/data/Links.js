@@ -19,9 +19,9 @@ export const sections = [
     items: [
         { label: "Storia Principale", path: "/lorequest"},
         { label: "Fratellanza Oscura", path: "/darkquest"},
-        { label: "Gilda Maghi", path: "/pages/quest/magesGuild"},
-        { label: "Gilda Ladri", path: "/pages/quest/thievesGuild"},
-        { label: "Gilda Guerrieri", path: "/pages/quest/fightersGuild"},
+        { label: "Gilda Maghi", path: "/magesquest"},
+        { label: "Gilda Ladri", path: "/thievesquest"},
+        { label: "Gilda Guerrieri", path: "/fightersquest"},
         { label: "Santuari Daedrici", path: "/pages/quest/daedricSanctuary"},
         { label: "Varie", path: "/pages/quest/others"},
     ]

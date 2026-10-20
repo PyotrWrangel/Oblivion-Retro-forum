@@ -14,6 +14,9 @@ import Working from "./pages/Working";
 import DarkQuest from "./pages/Quest/DarkQuest.jsx";
 import Admin from "./pages/Admin.jsx";
 import Books from "./pages/World/Books.jsx";
+import MagesQuest from "./pages/Quest/MagesQuest.jsx";
+import ThievesQuest from "./pages/Quest/ThievesQuest.jsx";
+import FightersQuest from "./pages/Quest/FighterQuest.jsx";
 
 
 function App() {
@@ -36,6 +39,9 @@ function App() {
           <Route path="/darkquest" element={<DarkQuest />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/books" element={<Books />} />
+          <Route path="/magesquest" element={<MagesQuest />} />
+          <Route path="/thievesquest" element={<ThievesQuest />} />
+          <Route path="/fightersquest" element={<FightersQuest />} />
           <Route path="*" element={<Working />} />
 
         </Routes>

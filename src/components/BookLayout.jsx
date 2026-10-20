@@ -15,8 +15,11 @@ function BookLayout({ text }) {
 
   return (
     <>
-      <div>{pages[selectPage]}
-        <div className="flex">
+
+      <div className="text-2xl font-bold max-w-xl">
+        
+        {pages[selectPage]}
+        <div className="flex block">
 
       <button
         type="button"
