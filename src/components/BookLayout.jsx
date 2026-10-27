@@ -16,7 +16,7 @@ function BookLayout({ text }) {
   return (
     <>
 
-      <div className="text-2xl font-bold max-w-xl">
+      <div className="text-fluid-lg font-bold max-w-xl">
         
         {pages[selectPage]}
         <div className="flex block">

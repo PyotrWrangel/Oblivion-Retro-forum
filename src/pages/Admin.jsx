@@ -1,6 +1,9 @@
 import BaseCard from "../components/BaseCard.jsx";
 import AddTable from "../components/AddTable.jsx";
 
+import { useState, useEffect } from "react";
+const { data, setData } = useState([]);
+
 // Script del backend provvisorio che popolano le tabelle.
 // `script: null` = importer non ancora scritto (il pulsante resta disabilitato).
 const importers = [
@@ -13,8 +16,19 @@ const importers = [
   { tabella: "classes", label: "Le Classi", script: "importerClasses.php" },
   { tabella: "regions", label: "Le Regioni", script: "importerRegions.php" },
   { tabella: "signs", label: "I Segni Zodiacali", script: null },
-  { tabella: "books", label: "I Libri", script: "importerBooks.php" }
+  { tabella: "books", label: "I Libri", script: "importerBooks.php" },
+  { tabella: "misc_quest", label: "Le Quest Secondarie", script: "importerMiscellaneousQuest.php" },
+  { tabella: "sanctuary_quest", label: "Le Quest del Santuario", script: "importerSanctuaryQuest.php" },
 ];
+
+useEffect(() => {
+  fetch("http://localhost/obl-forum-backend-provvisorio/tables.php")
+    .then((response) => response.json())
+    .then((data) => {
+      // Gestisci i dati ricevuti
+      setData(data);
+    });
+}, []);
 
 function Admin() { 
   return (
@@ -22,6 +36,9 @@ function Admin() {
       title="Popola il Database"
       subtitle="Pagina di servizio: lancia gli importer del backend provvisorio senza aprirli a mano"
     >
+      <div className="mb-4 flex">
+
+      </div>
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 sm:gap-6">
         <p className="text-center text-fluid-sm text-oak-600">
           Attenzione: ogni import fa solo INSERT, quindi premere due volte lo
@@ -35,6 +52,8 @@ function Admin() {
             label={importer.label}
             script={importer.script}
           />
+
+
         ))}
       </div>
     </BaseCard>

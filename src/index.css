@@ -33,11 +33,11 @@
   --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
 
   /* Scale fluide: si adattano da mobile a desktop senza breakpoint */
-  --text-fluid-sm: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);      /* 16 → 18px */
-  --text-fluid-base: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);   /* 17 → 20px */
-  --text-fluid-lg: clamp(1.1875rem, 1.11rem + 0.42vw, 1.4375rem);/* 19 → 23px */
-  --text-fluid-xl: clamp(1.3125rem, 1.19rem + 0.66vw, 1.6875rem);/* 21 → 27px */
-  --text-fluid-2xl: clamp(1.5rem, 1.25rem + 1.2vw, 2.25rem);     /* 24 → 36px */
+  --text-fluid-sm: clamp(0.875rem, 0.85rem + 0.12vw, 0.9375rem); /* 14 → 15px */
+  --text-fluid-base: clamp(0.9375rem, 0.9rem + 0.2vw, 1.0625rem);/* 15 → 17px */
+  --text-fluid-lg: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);      /* 17 → 20px */
+  --text-fluid-xl: clamp(1.1875rem, 1.1rem + 0.45vw, 1.5rem);    /* 19 → 24px */
+  --text-fluid-2xl: clamp(1.375rem, 1.2rem + 0.9vw, 1.875rem);   /* 22 → 30px */
 
   /* Larghezze di contenuto */
   --container-content: 68rem;
