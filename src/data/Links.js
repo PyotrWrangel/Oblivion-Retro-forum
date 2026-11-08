@@ -22,8 +22,8 @@ export const sections = [
         { label: "Gilda Maghi", path: "/magesquest"},
         { label: "Gilda Ladri", path: "/thievesquest"},
         { label: "Gilda Guerrieri", path: "/fightersquest"},
-        { label: "Santuari Daedrici", path: "/pages/quest/daedricSanctuary"},
-        { label: "Varie", path: "/pages/quest/others"},
+        { label: "Santuari Daedrici", path: "/sanctuaryquest"},
+        { label: "Varie", path: "/miscquest"},
     ]
 },
 {

@@ -17,6 +17,8 @@ import Books from "./pages/World/Books.jsx";
 import MagesQuest from "./pages/Quest/MagesQuest.jsx";
 import ThievesQuest from "./pages/Quest/ThievesQuest.jsx";
 import FightersQuest from "./pages/Quest/FighterQuest.jsx";
+import SanctuaryQuest from "./pages/Quest/SanctuaryQuest.jsx";
+import MiscQuest from "./pages/Quest/MiscQuest.jsx";
 
 
 function App() {
@@ -42,6 +44,8 @@ function App() {
           <Route path="/magesquest" element={<MagesQuest />} />
           <Route path="/thievesquest" element={<ThievesQuest />} />
           <Route path="/fightersquest" element={<FightersQuest />} />
+          <Route path="/sanctuaryquest" element={<SanctuaryQuest />} />
+          <Route path="/miscquest" element={<MiscQuest />} />
           <Route path="*" element={<Working />} />
 
         </Routes>
