@@ -14,7 +14,8 @@ function AddTable({ tabella, label, script }) {
 
   const disponibile = Boolean(script);
 
-  // gli importer fanno solo INSERT: chiedo conferma per evitare doppioni
+  // gli importer aggiornano le righe esistenti invece di duplicarle (UNIQUE +
+  // ON DUPLICATE KEY UPDATE): la conferma resta perché sovrascrivono i dati con quelli dei JSON
   async function popola() {
     setConfermaAperta(false);
     setStato("caricamento");

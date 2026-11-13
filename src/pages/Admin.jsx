@@ -17,6 +17,14 @@ const importers = [
   { tabella: "books", label: "I Libri", script: "importerBooks.php" },
   { tabella: "misc_quest", label: "Le Quest Secondarie", script: "importerMiscellaneousQuest.php" },
   { tabella: "sanctuary_quest", label: "Le Quest del Santuario", script: "importerSanctuaryQuest.php" },
+  { tabella: "mages_guild", label: "Le Quest dei Maghi", script: "importerMagesQuest.php" },
+  { tabella: "thieves_guild", label: "Le Quest dei Ladri", script: "importerThievesQuest.php" },
+  { tabella: "fighters_guild", label: "Le Quest dei Guerrieri", script: "importerFightersQuest.php" },
+  // ordine obbligato dalle foreign key: attribute e level prima di skills, skills prima di bonus
+  { tabella: "attribute", label: "Gli Attributi", script: "importerAttribute.php" },
+  { tabella: "level", label: "I Livelli", script: "importerLevel.php" },
+  { tabella: "skills", label: "Le Abilità", script: "importerSkills.php" },
+  { tabella: "bonus", label: "I Bonus", script: "importerBonus.php" },
 ];
 
 
@@ -49,8 +57,8 @@ function Admin() {
       </div>
       <div className="mx-auto flex w-full max-w-3xl flex-col gap-4 sm:gap-6">
         <p className="text-center text-fluid-sm text-oak-600">
-          Attenzione: ogni import fa solo INSERT, quindi premere due volte lo
-          stesso pulsante duplica le righe nella tabella.
+          Ogni import inserisce le righe nuove e aggiorna quelle già esistenti:
+          puoi premere lo stesso pulsante più volte senza creare duplicati.
         </p>
 
         {importers.map((importer) => (
