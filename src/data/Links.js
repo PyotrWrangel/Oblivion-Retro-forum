@@ -30,7 +30,7 @@ export const sections = [
     category: "skill",
     slug: "Skill",
     items: [
-        { label: "Le Skill", path: "/pages/skill/skills"},
+        { label: "Le Skill", path: "/skill"},
         { label: "Gli Incantesimi", path: "/pages/skill/magic"},
         { label: "Bonus Skill", path: "/pages/skill/bonus"},
         { label: "Suggerimenti Skill", path: "/pages/skill/hints"},

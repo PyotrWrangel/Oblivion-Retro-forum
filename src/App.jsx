@@ -19,6 +19,7 @@ import ThievesQuest from "./pages/Quest/ThievesQuest.jsx";
 import FightersQuest from "./pages/Quest/FighterQuest.jsx";
 import SanctuaryQuest from "./pages/Quest/SanctuaryQuest.jsx";
 import MiscQuest from "./pages/Quest/MiscQuest.jsx";
+import Skill from "./pages/Character/Skill.jsx";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/fightersquest" element={<FightersQuest />} />
           <Route path="/sanctuaryquest" element={<SanctuaryQuest />} />
           <Route path="/miscquest" element={<MiscQuest />} />
+          <Route path="/skill" element={<Skill />} />
           <Route path="*" element={<Working />} />
 
         </Routes>
