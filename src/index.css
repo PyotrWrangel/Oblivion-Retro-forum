@@ -27,6 +27,24 @@
   --color-blood-600: #990000;
   --color-gold-500: #b8912f;
 
+  /* Specializzazioni delle skill (astrolabio, pergamena, codice attributi) */
+  --color-combat: #8e1b12;
+  --color-magic: #2e3f6e;
+  --color-stealth: #4b5b26;
+
+  /* La pergamena che si srotola dall'alto (classe: animate-unfurl) */
+  --animate-unfurl: unfurl 0.45s ease-out;
+  @keyframes unfurl {
+    from {
+      clip-path: inset(0 0 100% 0);
+      opacity: 0.3;
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+      opacity: 1;
+    }
+  }
+
   /* Tipografia */
   --font-display: "Cinzel", "Trajan Pro", Georgia, "Times New Roman", serif;
   --font-body: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
